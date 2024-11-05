@@ -80,7 +80,7 @@ gotpath:    sep   scall                 ; call rmdir, return 0 if no error
 
             sep   scall                 ; else output message
             dw    o_inmsg
-            db    'ERROR: can not removremovee directory',13,10,0
+            db    'ERROR: can not remove directory',13,10,0
 
             ldi   1                     ; and return 1
             sep   sret
